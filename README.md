@@ -1,14 +1,11 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+Code for a creating a docker app with Flask and MySQL tutorial
 
+Refer to [blog post about creating a flask-mysql app with docker](https://stavshamir.github.io/python/dockerizing-a-flask-mysql-app-with-docker-compose/)
 
-Hi there! Welcome to AWS Cloud9!
+## GitLab CI
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
+The [.gitlab-ci.yml](.gitlab-ci.yml) file can be used in GitLab to build,
+test, and deploy the code, as in https://gitlab.com/TrendDotFarm/docker-tutorial
+For more information, read the [Docker Compose Integration to GitLab
+CI](GitLab-CI.md) guide.
+Test
