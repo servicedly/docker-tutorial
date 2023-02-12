@@ -32,5 +32,5 @@ jobs:
       run: |
         
         docker build -t $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_APP} -f Dockerfile .
-        docker build -t $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_DB} -f init.sql
+        docker build -t $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_DB} -f init.sql .
         docker push $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_APP}
