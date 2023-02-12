@@ -27,10 +27,9 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: containersassignment
         IMAGE_TAG_APP: app.v0.1
-        IMAGE_TAG_DB: db.v0.1        
+           
 
       run: |
         
         docker build -t $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_APP} -f Dockerfile .
-        docker push $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_DB}
         docker push $ECR_REGISTRY/${ECR_REPOSITORY}:${IMAGE_TAG_APP}
